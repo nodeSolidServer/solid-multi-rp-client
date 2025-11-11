@@ -184,7 +184,7 @@ class MultiRpClient {
       ['code', 'id_token token', 'code id_token token']
     config.post_logout_redirect_uris = config.post_logout_redirect_uris ||
       this.localConfig.post_logout_redirect_uris || []
-    config.scope = config.scope || 'openid profile'
+    config.scope = config.scope || 'openid profile webid'
     // client_uri: 'https://github.com/solid/node-solid-server',
     // logo_uri: 'solid logo',
     // post_logout_redirect_uris: [ '...' ],
