@@ -8,7 +8,7 @@
     "standard": "standard src/*",
     "tape": "tape test/unit/*.js",
     "test": "npm run standard && npm run tape",
-    "prepare": "npm test",
+    "prepublishOnly": "npm test",
     "postversion": "git push --follow-tags"
   },
   "engines": {
@@ -39,13 +39,13 @@
   },
   "homepage": "https://github.com/solid/solid-multi-rp-client",
   "dependencies": {
-    "@solid/oidc-rp": "^0.11.7",
+    "@solid/oidc-rp": "^0.11.10",
     "kvplus-files": "0.0.4"
   },
   "devDependencies": {
-    "sinon": "^9.2.4",
-    "standard": "^16.0.4",
-    "tape": "^5.6.0"
+    "sinon": "^21.0.0",
+    "standard": "^17.1.2",
+    "tape": "^5.9.0"
   },
   "standard": {
     "globals": []
